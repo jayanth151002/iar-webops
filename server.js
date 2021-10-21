@@ -35,7 +35,7 @@ app.post("/send", (req, res) => {
 
     let info = {
         from: name,
-        to: "ae20b030@smail.iitm.ac.in",
+        to: "",
         subject: subject,
         text: msg,
     };
