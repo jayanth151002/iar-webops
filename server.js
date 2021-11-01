@@ -18,15 +18,15 @@ app.get("/", (req, res) => {
 })
 
 app.post("/send", (req, res) => {
-    const { name, subject, msg } = req.body;
+    const { name, email, subject, msg } = req.body;
 
     let transporter = nodemailer.createTransport({
         host: "smtp.gmail.com",
         port: 587,
         secure: false,
         auth: {
-            user: '',
-            pass: '',
+            user: 'testmailofjayanth@gmail.com',
+            pass: 'jayanth151002',
         },
         tls: {
             rejectUnauthorized: false
@@ -35,9 +35,10 @@ app.post("/send", (req, res) => {
 
     let info = {
         from: name,
-        to: "",
+        to: "ae20b030@smail.iitm.ac.in",
         subject: subject,
-        text: msg,
+        text: msg+" "+email,
+        email: email,
     };
 
     transporter.sendMail(info, function (error, info) {
