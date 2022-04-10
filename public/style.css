@@ -1,0 +1,53 @@
+body{
+    overflow-x: hidden;
+}
+
+.header{
+   background-image: url("/images/banner-bg.svg");
+   min-height: 140vh;
+   /* margin: -8px; */
+   color: white;
+   background-repeat: no-repeat;
+}
+
+.footer{
+    background-image: url("/images/footer-bg.svg");
+    max-height: 160vh;
+ }
+
+ .navbar1{
+    min-height: 100px;
+ }
+
+ .heading{
+     padding: 8% 5%;
+     font-size: 40px;
+ }
+
+.subtext{
+    padding: 5%;
+    font-size: 20px;
+}
+
+.mainbtn{
+    padding: 2%;
+}
+
+ .maincard{
+     margin: 3% 30%;
+ }
+ .contactcard{
+     padding-top: 20%;
+ }
+
+ .contactcardtext{
+    padding: 5% 10%;
+}
+
+.footercontent{
+    color: white;
+    margin-top: 10%;
+}
+.link-li{
+margin: 20px 20px;
+}
